@@ -59,7 +59,7 @@
    cd be
 
 
-2. Create a virtual environment and activate it
+2. Create a virtual environment and activate it:
     ```bash
     python -m venv env
     source env/bin/activate   # or `env\Scripts\activate` on Windows
