@@ -52,7 +52,7 @@
 
 ## 🛠 Installation & Setup
 
-1. **Clone the repository:**
+1. Clone the repository:
    ```bash
    git clone https://github.com/Harithapisharody/PYPAF.git
    cd PYPAF
