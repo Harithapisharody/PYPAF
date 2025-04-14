@@ -20,7 +20,6 @@
 - Simplify programming education by guiding students from idea to implementation.
 - Automate code generation and evaluation to support instructors in lab settings.
 
-
 ---
 
 ## 🔧 Tech Stack
@@ -53,16 +52,17 @@
 
 ## 🛠 Installation & Setup
 
-1. Clone the repository:
+1. **Clone the repository:**
    ```bash
    git clone https://github.com/Harithapisharody/PYPAF.git
-   cd pypaf
+   cd PYPAF
    cd be
 
-2. Create a virtual environment and activate it:
-  ```bash
-   python -m venv env
-   source env/bin/activate  # or `env\Scripts\activate` on Windows
+
+2. Create a virtual environment and activate it
+
+    python -m venv env
+    source env/bin/activate   # or `env\Scripts\activate` on Windows
 
 3. Install dependencies:
     ```bash
