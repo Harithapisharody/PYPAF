@@ -1,0 +1,10 @@
+flask
+flask-cors
+fake-useragent
+googletrans==4.0.0-rc1
+transformers
+graphviz
+torch
+requests
+graphviz
+pandas

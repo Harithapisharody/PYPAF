@@ -1,0 +1,55 @@
+__pycache__/
+*.pyc
+static/
+
+
+
+
+# Ignore virtual environments
+venv/
+env/
+
+
+*.py[cod]
+*$py.class
+
+# Ignore system files (Windows & macOS)
+.DS_Store
+Thumbs.db
+
+# Ignore IDE/editor config files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Ignore logs and temp files
+*.log
+*.tmp
+
+# Ignore large dependency libraries (e.g., Torch, Transformers, etc.)
+pypaf_project/be/
+
+# Ignore Jupyter Notebook checkpoints (if using)
+.ipynb_checkpoints/
+
+# Ignore compiled files
+*.so
+*.dll
+*.dylib
+*.bin
+*.o
+*.a
+
+# Ignore Git metadata for submodules
+.gitmodules
+
+# Ignore Python cache files
+__pycache__/
+utils/__pycache__/
+utils/Teacher/__pycache__/
+utils/Teacher/evaluation_results.csv
+utils/Teacher/reference.py
+# Ignore all contents inside uploads but keep the folder
+utils/Teacher/uploads/*
+!.gitkeep  # Optionally, keep the directory tracked if needed]

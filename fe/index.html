@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<title>Pypaf - Python Code Generator</title>
+		<link
+			rel="stylesheet"
+			href="style.css" />
+	</head>
+
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/raphael/2.3.0/raphael.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="http://flowchart.js.org/flowchart-latest.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/raphael/2.3.0/raphael.min.js?v=1.0"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js?v=1.0"></script>
+	<body>
+				<!-- Front Page for Role Selection -->
+<div id="frontPage" class="front-page">
+	<h1>Welcome to Pypaf</h1>
+	<p>✨ Select your role ✨</p>
+	<div class="button-container">
+		<button id="studentBtn">👨‍🎓 Student</button>
+		<button id="teacherBtn">👩‍🏫 Teacher</button>
+	</div>
+</div>
+<div class="back-arrow" id="backArrow" style="display:none;">⬅</div>
+
+<div id="studentSection" style="display:none;">
+	<div class="container">
+		<h1>Pypaf</h1>
+		<form id="generateForm">
+			<textarea id="studentInput" placeholder="Type Requirement" rows="5" required></textarea>
+			<button type="submit">Submit</button>
+		</form>
+			
+			<!-- <h2 id="PseudoCodeHeading" style="display:none;">Generated PseudoCode:</h2>
+			<pre id="generatedPseudocode" style="display:none;"></pre> -->
+
+			
+			<h2 id="generatedAlgorithmHeading" style="display:none;">Algorithm:</h2>
+			<pre id="generatedAlgorithm" style="display:none;"></pre>
+			
+			<h2 id="generatedFlowchartHeading" style="display:none;">Flowchart:</h2>
+			<div id="generatedFlowchart"style="display:none;" >
+			<img id="flowchartImage" src="" alt="Flowchart" style="max-width: 100%;"/>
+
+			<h2 id="generatedCodeHeading" style="display:none;">Generated Python Code:</h2>
+			<textarea id="editableCode" style="display:none;" rows="10"></textarea>
+			<button id="copyButton" style="display:none;">Copy Code</button>
+			<button id="runButton" style="display:none;">Run Code</button>
+			
+
+			</div>
+		</div>
+		</div>
+
+		<!-- Teacher Section -->
+		<div id="teacherSection" style="display:none;">
+			<div class="container">
+				<h1>Pypaf - Teacher</h1>
+				<textarea id="teacherInput" placeholder="Enter Requirement" rows="5" required></textarea>
+				<button id="teacherGenerateBtn">Generate Code</button>
+		
+				
+		
+				<h2 id="teacher_generatedCodeHeading" style="display:none;">Generated Python Code:</h2>
+			<textarea id="teacher_editableCode" style="display:none;" rows="10"></textarea>
+			<button id="teacher_runButton" style="display:none;">Run Code</button>
+			<button id="saveButton" style="display:none;">Save</button>
+			<!-- Trigger button to open file dialog -->
+<button id="uploadFolderButton"style="display:none;">Upload Folder</button>
+
+<!-- Hidden input field to select a folder -->
+<input type="file" id="folderInput" webkitdirectory multiple style="display:none;" />
+
+
+			<button id="teacher_EvaluateBtn" style="display:none;">Evaluate</button>
+			<button id="teacher_EvaluateBtn" style="display:none;">Evaluate</button>
+        <button id="downloadReportBtn" style="display:none;">Download Report</button>
+			<!-- Table for CSV data -->
+			<h2 id="resultsTableHeading" style="display:none;">Evaluation Results</h2>
+			<table id="resultsTable" style="display:none;">
+				<thead id="resultsTableHead"></thead>
+				<tbody id="resultsTableBody"></tbody>
+			</table>
+			</div>
+		</div>
+		
+
+
+
+
+
+		<!-- Link to API files -->
+		<script src="api/baseUrl.js"></script>
+		<script src="api/commonApi.js"></script>
+
+		<!-- Link to your main script.js -->
+		<script src="script.js"></script>
+	</body>
+</html>
