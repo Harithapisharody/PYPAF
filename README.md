@@ -75,7 +75,7 @@
 5. Run Frontend separately
     cd ../fe  # Navigate to the frontend folder
 
-
+---
 ## 📊 Project Architecture
 - Algorithm & Flowchart Generator
 
