@@ -72,7 +72,8 @@
     ```bash
     python app.py
 
-5. Run Frontend separately
+5. Run Frontend separately:
+    ```bash
     cd ../fe  # Navigate to the frontend folder
 
 ---
